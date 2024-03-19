@@ -22,4 +22,4 @@ python -m ipykernel install --user --name=venv
 After running the above commands, log into your JupyterHub account, stop your Jupyter server, and restart your Jupyter server. 
 At this point you should be able to run any of the Jupyter notebooks in this project with the new "venv" Python kernel, which should be configured correctly for the code in the notebooks to run. 
 
-
+If you are using GitHub Codespaces, the `requirements.txt` file should be picked up automatically and the Codespaces environment _should_ bootstrap itself into a working state without needing any specific user input or configuration.
