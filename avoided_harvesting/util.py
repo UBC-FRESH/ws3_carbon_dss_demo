@@ -60,12 +60,12 @@ def calculate_co2_value_stock(fm, i, product_coefficient, decay_rate, product_pe
     """
     Calculate carbon stock for harvested wood products for period `i`.
     """
-        period = math.ceil(i / fm.period_length)
-        return (
-            sum(fm.compile_product(period, f'totvol * {product_coefficient} * {product_percentage}') / 10 * (1 - decay_rate)**(i - j)
-            for j in range(1, i + 1)
-            ) * 460 * 0.5 * 44 / 12
-        )
+    period = math.ceil(i / fm.period_length)
+    return (
+        sum(fm.compile_product(period, f'totvol * {product_coefficient} * {product_percentage}') / 10 * (1 - decay_rate)**(i - j)
+        for j in range(1, i + 1)
+        ) * 460 * 0.5 * 44 / 12
+    )
     
 
 def calculate_initial_co2_value_stock(fm, i, product_coefficient, product_percentage):
