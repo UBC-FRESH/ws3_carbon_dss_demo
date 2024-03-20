@@ -1,5 +1,7 @@
 # ws3_libcbm_dss
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/UBC-FRESH/ws3_carbon_dss_demo/main)
+
 This repository contains all the files necessary to deploy a proof-of-concept example of a decision-support-system (DSS) prototype combining ws3 and libcbm_py (with a Jupyter notebook interface).
 
 # Deployment and Installation
